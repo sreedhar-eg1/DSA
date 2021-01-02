@@ -1,0 +1,31 @@
+
+Finding maximum and minimum value in stack?
+
+
+ListElem *findmin(){
+ListElem *t=pfirst;
+ListElem *min=pfirst;
+while (t != NULL)
+{
+  if (t->data<min->data) { min=t;}
+  t = t->next;
+}
+
+return min;
+
+}
+
+
+
+ListElem *findmax(){
+ListElem *t=pfirst;
+ListElem *max=pfirst;
+while (t != NULL)
+{
+  if (t->data>max->data) { max=t;}
+  t = t->next;
+}
+
+return max;
+
+}
